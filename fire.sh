@@ -10,6 +10,9 @@ KERNEL_PATH=/home/firemax13/m51kernel
 export CROSS_COMPILE=$KERNEL_PATH/toolchain/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export ARCH=arm64
 
+# CleanUP Output Folder
+rm -rf out
+
 # Output hacking & tricking
 if [ ! -d out ]; then
 	mkdir out
