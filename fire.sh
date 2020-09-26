@@ -29,3 +29,4 @@ make -C $KERNEL_PATH O=$KERNEL_PATH/out ARCH=arm64 CROSS_COMPILE=$BUILD_CROSS_CO
 make -j8 -C $KERNEL_PATH O=$KERNEL_PATH/out ARCH=arm64 CROSS_COMPILE=$BUILD_CROSS_COMPILE REAL_CC=$KERNEL_LLVM_BIN CLANG_TRIPLE=$CLANG_TRIPLE
 
 tools/mkdtimg create out/arch/arm64/boot/dtbo.img --page_size=4096 $(find out -name "*.dtbo")
+tools/mkdtimg create out/arch/arm64/boot/recovery_dtbo --page_size=4096 $(find out -name "*.dtbo")
