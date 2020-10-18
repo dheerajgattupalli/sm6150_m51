@@ -4,8 +4,8 @@ set -e
 
 # Put the Kernel Path in here and fire it up
 # No need to change the whole and entire file to set-up kernel path
-KERNEL_PATH=/home/Vevelo/firemax13/m51kernel
-TOOLCHAIN_PATH=/home/Vevelo/firemax13
+KERNEL_PATH=/home/mydadisbrave2/m51kernel
+TOOLCHAIN_PATH=/home/mydadisbrave2
 
 # Export GCC and ARCH
 export CROSS_COMPILE=$TOOLCHAIN_PATH/aarch64-linux-android-4.9/bin/aarch64-linux-android-
